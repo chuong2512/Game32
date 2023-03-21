@@ -9,7 +9,7 @@ public class SkinSelector : MonoBehaviour
 
     void Start()
     {
-        gameData = GameDataManager.Instance;
+        gameData = GameDataManager.Ins;
         playerData = gameData.playerData;
         
         currentSkin = playerData.currentSkin;
