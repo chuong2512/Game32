@@ -8,11 +8,11 @@ using UnityEngine.Purchasing;
 public class Key
 {
     public const string PACK1 = "pack1_phongthinghiem";
-    public const string PACK2 = "pack1_phongthinghiem";
-    public const string PACK3 = "pack1_phongthinghiem";
-    public const string PACK4 = "pack1_phongthinghiem";
-    public const string PACK5 = "pack1_phongthinghiem";
-    public const string PACK6 = "pack1_phongthinghiem";
+    public const string PACK2 = "pack2_phongthinghiem";
+    public const string PACK3 = "pack3_phongthinghiem";
+    public const string PACK4 = "pack4_phongthinghiem";
+    public const string PACK5 = "pack5_phongthinghiem";
+    public const string PACK6 = "pack6_phongthinghiem";
 }
 
 public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener

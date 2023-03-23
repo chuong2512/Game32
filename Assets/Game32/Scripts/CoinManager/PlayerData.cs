@@ -11,6 +11,7 @@ public class Constant
 public class PlayerData : BaseData
 {
     public int intHelp;
+    public int intLevel;
     public int currentSkin;
     public bool[] listSkins;
 
@@ -31,6 +32,7 @@ public class PlayerData : BaseData
     public override void ResetData()
     {
         intHelp = 0;
+        intLevel = 0;
         currentSkin = 0;
         listSkins = new bool[Constant.countSong];
 
@@ -42,6 +44,12 @@ public class PlayerData : BaseData
         Save();
     }
 
+    public void UpLevel()
+    {
+        intLevel++;
+        Save();
+    }
+    
     public bool CheckLock(int id)
     {
         return this.listSkins[id];
@@ -71,7 +79,7 @@ public class PlayerData : BaseData
         return intHelp >= Constant.priceUnlockSkin;
     }
 
-    public void SubDiamond(int a)
+    public void SubHelp(int a)
     {
         intHelp -= a;
 
